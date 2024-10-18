@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zain", sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: yellow;
+}
+
+.header h1{
+    font-size: 2.5rem;
+    margin: 0 20px;
+}
+
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+
+.nav ul li a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-weight: 700;
+}
