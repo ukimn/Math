@@ -9,19 +9,75 @@
     <!-- fontAwsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body dir="rtl">
     <header class="header" dir="rtl">
         <div class="logo">
             <h1>الرياضيات</h1>
         </div>
+        <nav class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" style="display: none;"></i>
+        </nav>
         <nav class="nav">
             <ul>
-                <li><a href="#home">الواجهه</a></li>
-                <li><a href="#about">عنا</a></li>
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#about">نبذة</a></li>
                 <li><a href="#contact">التواصل</a></li>
             </ul>
         </nav>
     </header>
+    
+
+    <div id="home">
+        <div class="img"></div>
+        <div class="content">
+                <p>أهلا بك في موقع الاستاذ احمد سعد</p>
+                <p>استاذ كبير في مادة الرياضيات</p>
+                <a href="#about" class="btn">للمزيد من المعلومات</a>
+        </div>
+        <div class="circles">
+            <div class="circle"><p>+</p></div>
+            <div class="circleone"><p>-</p></div>
+            <div class="circletwo"><p>÷</p></div>
+            <div class="circlethree"><p>x</p></div>
+            <div class="circlefour"><p>=</p></div>
+            <div class="circlefive"><p>%</p></div>
+        </div>
+        
+        
+    </div>
+    <div id="about">
+        <h1>نبذة</h1>
+        <p>الأستاذ أحمد سعد، خبير مرموق في مادة الرياضيات، يمتلك<br><span>خبرة تزيد عن عشرين عامًا</span> في تدريس جميع المناهج التعليمية في دولة الكويت. يتميز بمهارة عالية في توصيل المعلومات بسهولة وتبسيط المفاهيم للطلاب.</p>
+    </div>
+
+    <div id="contact">
+        <div class="main-content">
+            <h1>التواصل</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="content">
+                    <p>56555079</p>
+                </div>
+            </div>
+            <a href="https://www.instagram.com/ahmed.saad.42?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" class="card">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="content">
+                    <p>انستغرام</p>
+                </div>
+            </a>            
+        </div>
+    </div>
+    <footer>
+        © 2025. جميع الحقوق محفوظة.
+    </footer>
+    
     <script src="index.js"></script>
 </body>
 </html>
