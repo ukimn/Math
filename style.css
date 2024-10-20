@@ -7,6 +7,10 @@
     font-family: "Zain", sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 body {
     scroll-behavior: smooth;
 }
