@@ -1,303 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Zain", sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
-body::-webkit-scrollbar{
-    display: none;
-}
-
-body{
-    scroll-behavior: smooth;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    background-color: yellow;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.header h1{
-    font-size: 2.5rem;
-    margin: 0 20px;
-}
-
-.nav ul{
-    display: flex;
-}
-
-.nav ul li{
-    margin: 0 20px;
-    list-style: none;
-}
-
-.nav ul li a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: rgb(12, 12, 12);
-    font-weight: 700;
-    transition: 0.1s ease;
-    border-bottom: none;
-}
-
-.nav ul li a:hover{
-    border-bottom: 3px solid;
-}
-
-.img{
-    height: 200px;
-    width: 200px;
-    margin-right: 30px;
-    margin-top: 120px;
-    border-radius: 50%;
-    border: 2px solid transparent;
-    background: url("https://cdn.discordapp.com/attachments/1271059582864850945/1296779339353821266/e888442ed8b86277.jpg?ex=6713875f&is=671235df&hm=685524748d7402086524cef1a984050c7fc3a040340174dcedb6bedb0f75d545&");
-    background-size: cover  ;
-}
-
-
-
-#home .content h1{
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#home .content p{
-    font-size: 4rem;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#home .content .btn{
-    margin-right: 30px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    background-color: yellow;
-    color: black;
-    text-decoration: none;
-    transition: 0.7s ease all;
-    font-weight: 800;
-    cursor: pointer;
-}
-
-#home .content .btn:hover{
-    background-color: rgb(49, 48, 48);
-    color: yellow;
-}
-
-#about{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 90px;
-    padding: 30px 0;
-    background-color: yellow; 
-}
-
-#about h1{
-    font-size: 5rem;
-}
-.circles {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust this value based on your layout */
-    margin-top: 50px;
-}
-
-.circle, .circleone, .circletwo, .circlethree, .circlefour, .circlefive {
-    position: absolute; /* Ensure they are positioned within the container */
-    border-radius: 50%;
-    background-color: yellow;
-    animation: float 4s ease-in-out infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
-}
-
-/* First Circle */
-.circle {
-    height: 200px;
-    width: 200px;
-    top: 20%; /* Adjusted */
-    left: 10%; /* Adjusted */
-}
-
-/* Second Circle */
-.circleone {
-    height: 150px;
-    width: 150px;
-    top: 40%; /* Adjusted */
-    left: 30%; /* Adjusted */
-    animation-duration: 5s;
-}
-
-/* Third Circle */
-.circletwo {
-    height: 100px;
-    width: 100px;
-    top: 30%; /* Adjusted */
-    left: 50%; /* Adjusted */
-    animation-duration: 6s;
-}
-
-/* Fourth Circle */
-.circlethree {
-    height: 180px;
-    width: 180px;
-    top: 50%; /* Adjusted */
-    left: 70%; /* Adjusted */
-    animation-duration: 5s;
-}
-
-/* Fifth Circle */
-.circlefour {
-    height: 120px;
-    width: 120px;
-    top: 70%; /* Adjusted */
-    left: 20%; /* Adjusted */
-    animation-duration: 6s;
-}
-
-/* Sixth Circle */
-.circlefive {
-    height: 140px;
-    width: 140px;
-    top: 60%; /* Adjusted */
-    left: 80%; /* Adjusted */
-    animation-duration: 4.5s;
-    margin-left: 70px;
-}
-
-/* Floating animation */
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-#about p{
-    font-size: 3.6rem;
-    margin-right: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;    
-}
-
-#about p > span{
-    color: red;
-}
-
-#contact{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
-    padding: 30px 0;
-    text-align: center;
-}
-
-#contact .main-content h1{
-    font-size: 5rem;
-}
-
-#contact .cards{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 
-    0 2px 6px rgba(0, 0, 0, 0.08); /* Subtle multi-layered shadow */
-    border-radius: 12px; /* Soft, rounded corners */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    margin-bottom: 30px;
-}   
-
-#contact .card:hover{
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 
-    0 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-#contact .card .icon {
-    font-size: 6rem;
-    margin-bottom: 10px;
-    color: black; /* Bootstrap's primary blue, for a fresh and professional look */
-}
-
-#contact .card .content p{
-    font-size: 2rem;     
-    text-shadow: 2px 2px rgb(165, 164, 164);   
-}
-
-#contact .card .content p{
-    font-size: 2rem;     
-    text-shadow: 2px 2px rgb(165, 164, 164);   
-    text-decoration: none;
-    color: black;
-}
-
-footer {
-    background-color: yellow; /* Dark background color */
-    color: black; /* White text color for contrast */
-    text-align: center; /* Center the text */
-    padding: 20px; /* Add some padding */
-    font-size: 3rem; /* Font size for better readability */
-    position: relative; /* Allow positioning */
-    bottom: 0; /* Position it at the bottom of the page */
-    width: 100%; /* Full width */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on top */
-}
-
-footer a {
-    color: #ffc107; /* Yellow color for links */
-    text-decoration: none; /* Remove underline from links */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline links on hover */
-}
-
-/* Global styles (apply to all devices) */
 * {
     margin: 0;
     padding: 0;
@@ -305,31 +7,52 @@ footer a:hover {
     font-family: "Zain", sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-body::-webkit-scrollbar {
-    display: none;
-}
-
 body {
     scroll-behavior: smooth;
 }
 
-/* Header styles */
+/* Hide Scrollbars */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 5%;
     background-color: yellow;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 999;
-    border-bottom: 1px solid rgb(12, 12, 12);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
+    font-size: 1.6rem;
+    color: rgb(12, 12, 12);
+    font-weight: 700;
+    transition: 0.1s ease;
+}
+
+.nav ul li a:hover {
+    border-bottom: 3px solid;
 }
 
 .hamburger {
@@ -342,235 +65,197 @@ body {
     color: black;
 }
 
-/* MEDIA QUERIES */
-
-/* Large Screens (Desktops and Tablets Landscape) */
-@media only screen and (min-width: 1024px) {
-    .nav ul {
-        display: flex;
-    }
-    
-    .hamburger {
-        display: none; /* Hide the burger icon on large screens */
-    }
+/* Home Section */
+#home .content {
+    margin-top: 150px;
+    padding: 0 5%;
+    text-align: center;
 }
 
-/* Tablets and Phones (Portrait Mode) */
-@media only screen and (max-width: 1023px) {
-    /* Hide the main nav and display the burger menu */
+#home .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#home .content p {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home .content .btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: yellow;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+#home .content .btn:hover {
+    background-color: rgb(49, 48, 48);
+    color: yellow;
+}
+
+.img {
+    height: 200px;
+    width: 50%;
+    max-width: 200px;
+    margin: 120px auto 30px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background-size: cover;
+    background-image: url("https://cdn.discordapp.com/attachments/1271059582864850945/1296779339353821266/e888442ed8b86277.jpg?ex=6713875f&is=671235df&hm=685524748d7402086524cef1a984050c7fc3a040340174dcedb6bedb0f75d545&");
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    margin-top: 150px;
+    padding: 50px 5%;
+    background-color: yellow;
+}
+
+#about h1 {
+    font-size: 4rem;
+}
+
+#about p {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#about p span {
+    color: red;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-top: 60px;
+    padding: 50px 5%;
+    background-color: white;
+}
+
+#contact .main-content h1 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+#contact .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contact .card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#contact .card:hover {
+    transform: scale(1.1);
+}
+
+#contact .card .icon {
+    font-size: 6rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#contact .card .content p {
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Footer */
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+/* Small Devices (320px and up) */
+@media only screen and (max-width: 767px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
     .nav ul {
         display: none;
         flex-direction: column;
-        background-color: yellow;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
         width: 100%;
-        text-align: center;
-    }
-
-    .nav ul.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-        margin-right: 20px;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: yellow;
+        text-align: right;
     }
 
     .nav ul li {
         margin: 10px 0;
     }
 
-    .nav ul li a {
-        font-size: 2rem;
-    }
-}
-
-/* Small Phones (iPhone SE, older Android) */
-@media only screen and (max-width: 767px) {
-    .logo h1 {
-        font-size: 2rem;
+    .hamburger {
+        display: block;
     }
 
-    .fa-bars, .fa-xmark {
-        font-size: 2rem;
+    .img {
+        width: 150px;
     }
 
-    .nav ul li a {
-        font-size: 1.6rem;
+    #home .content h1 {
+        font-size: 2.5rem;
     }
-}
 
-/* iPads, Tablets Portrait */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .nav ul li a {
+    #home .content p {
         font-size: 1.8rem;
     }
+
+    #about p, #contact p {
+        font-size: 1.5rem;
+    }
 }
 
-/* Landscape Phones */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* Medium Devices (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
     .nav ul li a {
-        font-size: 1.7rem;
-    }
-}
-
-/* Large Screens (Desktops and Large Tablets Landscape) */
-@media only screen and (min-width: 1024px) {
-    .header {
-        padding: 20px 40px; /* Increased padding */
+        font-size: 1.4rem;
     }
 
-    .nav ul {
-        display: flex;
-    }
-
-    .hamburger {
-        display: none; /* Hide the burger icon on large screens */
-    }
-
-    .logo h1 {
+    #home .content h1 {
         font-size: 3rem;
     }
 
-    .nav ul li a {
-        font-size: 1.8rem;
-    }
-
-    #home .content p {
-        font-size: 4rem;
-    }
-
     #about p {
-        font-size: 3.5rem;
-    }
-
-    footer {
-        font-size: 2.5rem;
-    }
-}
-
-/* Tablets and Phones Portrait Mode (max-width: 1023px) */
-@media only screen and (max-width: 1023px) {
-    .nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: yellow;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav ul.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-        margin-right: 20px; /* Center align hamburger */
-    }
-
-    .nav ul li {
-        margin: 10px 0;
-    }
-
-    .nav ul li a {
-        font-size: 2rem; /* Larger font size for readability */
-    }
-
-    .logo h1 {
-        font-size: 2.5rem; /* Adjust logo size */
-    }
-
-    #home .content p {
-        font-size: 3rem; /* Adjust home content font size */
-    }
-
-    #about p {
-        font-size: 2.8rem; /* Adjust about section font size */
-    }
-
-    footer {
-        font-size: 2rem; /* Adjust footer font size */
-    }
-}
-
-/* Small Phones (max-width: 767px) */
-@media only screen and (max-width: 767px) {
-    .header {
-        padding: 15px 20px; /* Smaller padding */
-    }
-
-    .logo h1 {
-        font-size: 2rem; /* Adjust logo size for small phones */
-    }
-
-    .nav ul li a {
-        font-size: 1.6rem; /* Adjust nav link size */
-    }
-
-    #home .content p {
-        font-size: 2.5rem; /* Adjust home content font size */
-    }
-
-    #about p {
-        font-size: 2rem; /* Adjust about section font size */
-    }
-
-    .circles .circle, .circles .circleone, 
-    .circles .circletwo, .circles .circlethree, 
-    .circles .circlefour, .circles .circlefive {
-        font-size: 2rem; /* Adjust circle font size */
-    }
-
-    footer {
-        font-size: 1.5rem; /* Adjust footer font size */
-    }
-}
-
-/* iPads, Tablets Portrait (min-width: 768px and max-width: 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .nav ul li a {
-        font-size: 1.8rem; /* Adjust font size for tablets */
-    }
-
-    .header {
-        padding: 20px 30px; /* Adjust header padding */
-    }
-
-    #home .content p {
-        font-size: 3.5rem; /* Adjust font size */
-    }
-
-    #about p {
-        font-size: 3rem; /* Adjust about section font size */
-    }
-
-    footer {
-        font-size: 2rem; /* Adjust footer font size */
-    }
-}
-
-/* Landscape Phones (min-width: 480px and max-width: 767px) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .nav ul li a {
-        font-size: 1.7rem; /* Adjust font size */
-    }
-
-    .header {
-        padding: 15px 20px; /* Smaller padding */
-    }
-
-    #home .content p {
-        font-size: 2.8rem; /* Adjust home content font size */
-    }
-
-    footer {
-        font-size: 1.5rem; /* Adjust footer font size */
+        font-size: 2rem;
     }
 }

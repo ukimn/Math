@@ -1,13 +1,13 @@
+// Select the hamburger and the navigation
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav ul');
-const barsIcon = document.querySelector('.fa-bars');
-const xmarkIcon = document.querySelector('.fa-xmark');
+const nav = document.querySelector('.nav');
 
+// Add click event listener to toggle the nav
 hamburger.addEventListener('click', () => {
-    // Toggle menu visibility
     nav.classList.toggle('active');
-
-    // Toggle between bars and xmark icons
-    barsIcon.style.display = barsIcon.style.display === 'none' ? 'block' : 'none';
-    xmarkIcon.style.display = xmarkIcon.style.display === 'none' ? 'block' : 'none';
+    
+    // Toggle the icon between bars and X
+    const icon = hamburger.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-times');
 });
