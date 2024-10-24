@@ -201,6 +201,91 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.circles {
+    position: relative;
+    padding: 50px 50px;
+}
+
+.circle, .circleone, .circletwo, .circlethree, .circlefour, .circlefive {
+    position: absolute;
+    border-radius: 50%;
+    background-color: yellow;
+    animation: float 4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* First Circle */
+.circle {
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 20%;
+}
+
+/* Second Circle */
+.circleone {
+    height: 150px;
+    width: 150px;
+    top: 30%;
+    left: 60%;
+    animation-duration: 5s;
+}
+
+/* Third Circle */
+.circletwo {
+    height: 100px;
+    width: 100px;
+    top: 70%;
+    left: 40%;
+    animation-duration: 6s;
+}
+
+/* Fourth Circle */
+.circlethree {
+    height: 180px;
+    width: 180px;
+    top: 20%;
+    left: 80%;
+    animation-duration: 5s;
+}
+
+/* Fifth Circle */
+.circlefour {
+    height: 120px;
+    width: 120px;
+    top: 60%;
+    left: 10%;
+    animation-duration: 6s;
+}
+
+/* Sixth Circle */
+.circlefive {
+    height: 140px;
+    width: 140px;
+    top: 40%;
+    left: 70%;
+    animation-duration: 4.5s;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 /* Responsive Styles */
 
 /* Small Devices (320px and up) */
@@ -238,7 +323,11 @@ footer a:hover {
     .img {
       width: 150px;
     }
-  
+
+    .circles{
+        display: none;
+    }
+
     #home .content h1 {
       font-size: 2.5rem;
     }
@@ -267,5 +356,9 @@ footer a:hover {
 
     #about p {
         font-size: 2rem;
+    }
+
+    .circles{    
+        display: none;
     }
 }
