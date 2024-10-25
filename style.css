@@ -110,7 +110,7 @@ body::-webkit-scrollbar {
     border-radius: 50%;
     border: 2px solid transparent;
     background-size: cover;
-    background-image: url("https://cdn.discordapp.com/attachments/1271059582864850945/1296779339353821266/e888442ed8b86277.jpg?ex=6713875f&is=671235df&hm=685524748d7402086524cef1a984050c7fc3a040340174dcedb6bedb0f75d545&");
+    background-image: url("ahamd.jpg");
 }
 
 /* About Section */
@@ -294,22 +294,66 @@ footer a:hover {
       font-size: 1.8rem;
     }
   
-    .nav ul {
+    .nav {
       display: block;
       flex-direction: column;
       width: 100%;
       position: absolute;
-      top: 70px; /* define --header-height as a CSS variable */
+      top: 90px; /* define --header-height as a CSS variable */
       right: 0;
       background-color: yellow;
       text-align: right;
       padding-right: 20px;
+      padding-left: 20px;
       opacity: 0;
     }
-  
-    .nav ul.active {
-      opacity: 1;
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
     }
+
+    .nav ul li{
+        border-bottom: 2px solid black;
+    }
+
+    .nav ul li:last-child{
+        border-bottom: none;
+    }
+
+  
+    /* Hamburger Menu */
+    .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .fa-bars {
+            display: block;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        .fa-bars.active{
+            display: none;
+        }   
+
+        .fa-xmark {
+            display: none;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        .fa-xmark.active{
+            display: block;
+        }
+
+        /* Mobile Navigation */
+
+        .nav.active {
+            opacity: 1;
+        }
+
 
   
     .nav ul li {
@@ -319,6 +363,7 @@ footer a:hover {
     .hamburger {
       display: block;
     }
+
   
     .img {
       width: 150px;
