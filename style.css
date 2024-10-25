@@ -102,15 +102,21 @@ body::-webkit-scrollbar {
     color: yellow;
 }
 
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img {
-    height: 200px;
+    height: 300px;
     width: 50%;
-    max-width: 200px;
-    margin: 120px auto 30px;
+    max-width: 300px;
+    margin: 120px 0 0 0;
     border-radius: 50%;
     border: 2px solid transparent;
     background-size: cover;
-    background-image: url("ahamd.jpg");
+    background-image: url();
 }
 
 /* About Section */
@@ -314,7 +320,7 @@ footer a:hover {
     }
 
     .nav ul li{
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid rgb(49, 48, 48);
     }
 
     .nav ul li:last-child{
