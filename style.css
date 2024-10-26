@@ -125,7 +125,7 @@ body {
     background-color: yellow;
     animation: appear 1s ease;
     animation-timeline: scroll();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0%;
     animation-iteration-count:  1;
 }
 
