@@ -309,6 +309,16 @@ footer a:hover {
     color: red;
 }
 
+.fa-whatsapp{
+    color: greenyellow;
+}
+
+.fa-instagram{
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Floating animation */
 @keyframes float {
     0% {
