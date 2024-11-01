@@ -305,6 +305,10 @@ footer a:hover {
     animation-duration: 4.5s;
 }
 
+.fa-youtube{
+    color: red;
+}
+
 /* Floating animation */
 @keyframes float {
     0% {
